@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600">MiPortafolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#inicio" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="#proyectos" class="hover:text-blue-600">Proyectos</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Habilidades</a></li>
+        <li><a href="#contacto" class="hover:text-blue-600">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center">
+    <h2 class="text-5xl font-bold mb-4">Hola, soy [Tu Nombre]</h2>
+    <p class="text-xl mb-6">[Tu profesión o rol] | Apasionado por la tecnología</p>
+    <a href="#proyectos" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Ver mis proyectos</a>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="container mx-auto py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Proyectos</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Proyecto 1">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Proyecto 1</h4>
+          <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver más →</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Proyecto 2">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Proyecto 2</h4>
+          <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver más →</a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Proyecto 3">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Proyecto 3</h4>
+          <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-gray-50 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Habilidades</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="px-6 py-3 bg-white shadow rounded-full">HTML</span>
+      <span class="px-6 py-3 bg-white shadow rounded-full">CSS</span>
+      <span class="px-6 py-3 bg-white shadow rounded-full">JavaScript</span>
+      <span class="px-6 py-3 bg-white shadow rounded-full">Python</span>
+      <span class="px-6 py-3 bg-white shadow rounded-full">TailwindCSS</span>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container mx-auto py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Contacto</h3>
+    <div class="max-w-lg mx-auto bg-white shadow-lg rounded-xl p-6">
+      <form>
+        <input type="text" placeholder="Tu nombre" class="w-full mb-4 p-3 border rounded">
+        <input type="email" placeholder="Tu correo" class="w-full mb-4 p-3 border rounded">
+        <textarea placeholder="Tu mensaje" rows="4" class="w-full mb-4 p-3 border rounded"></textarea>
+        <button class="w-full bg-blue-600 text-white py-3 rounded font-semibold hover:bg-blue-700 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
